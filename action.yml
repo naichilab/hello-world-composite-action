@@ -9,7 +9,7 @@ runs:
       shell: bash
 
     - name: Run goodbye.sh
-      run: "${env.current_action_path}"/goodbye.sh
+      run: ${{ env.current_action_path }}/goodbye.sh
       shell: bash
 
 
