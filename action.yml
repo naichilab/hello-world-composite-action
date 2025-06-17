@@ -3,12 +3,6 @@ description: 'Greet someone'
 runs:
   using: "composite"
   steps:
-    - name: ls
-      run: ls -la
-      shell: bash
-    - name: echo
-      run: echo abc
-      shell: bash
     - name: Run goodbye.sh
       run: goodbye.sh
       shell: bash
