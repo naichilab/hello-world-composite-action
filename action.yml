@@ -29,6 +29,10 @@ runs:
       env:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
 
+    - name: pwd
+      run: pwd
+      shell: bash
+
     - name: ls
       run: ls -la
       shell: bash
