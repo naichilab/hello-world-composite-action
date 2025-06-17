@@ -3,13 +3,8 @@ description: 'Greet someone'
 runs:
   using: "composite"
   steps:
-
-    - name: Set Env Value
-      run: echo "current_action_path=${{ github.action_path }}" >> $GITHUB_ENV
-      shell: bash
-
     - name: Run goodbye.sh
-      run: ${{ env.current_action_path }}/goodbye.sh
+      run: goodbye.sh
       shell: bash
 
 
